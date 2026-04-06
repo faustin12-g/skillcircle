@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - SkillCircle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/browse.css">
+  
+  <style>
+    .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--spacing-3xl) var(--spacing-lg);
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--spacing-md);
+      overflow: hidden;
+      animation: fadeUpIn 0.6s ease-out both;
+    }
+
+    .faq-item:nth-child(1) { animation-delay: 0.1s; }
+    .faq-item:nth-child(2) { animation-delay: 0.15s; }
+    .faq-item:nth-child(3) { animation-delay: 0.2s; }
+    .faq-item:nth-child(4) { animation-delay: 0.25s; }
+    .faq-item:nth-child(5) { animation-delay: 0.3s; }
+    .faq-item:nth-child(6) { animation-delay: 0.35s; }
+    .faq-item:nth-child(7) { animation-delay: 0.4s; }
+    .faq-item:nth-child(8) { animation-delay: 0.45s; }
+
+    .faq-question {
+      padding: var(--spacing-lg);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: background-color var(--transition-fast);
+    }
+
+    .faq-question:hover {
+      background-color: rgba(26, 22, 18, 0.02);
+    }
+
+    .faq-question h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    .faq-toggle {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      transition: transform var(--transition-fast);
+    }
+
+    .faq-item.open .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 var(--spacing-lg) var(--spacing-lg);
+      color: var(--muted);
+      line-height: 1.8;
+      display: none;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+      animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUpIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="../index.html" class="header-logo">
+    <div class="logo">Skill<span>Circle</span></div>
+    <div class="tagline">Trade skills, not money</div>
+  </a>
+  
+  <nav class="header-nav">
+    <a href="../index.html" class="nav-link"><i class="fas fa-arrow-left"></i> Back to home</a>
+    <a href="browse.html" class="nav-link">Browse skills</a>
+    <a href="faq.html" class="nav-link active">FAQ</a>
+  </nav>
+  
+  <div class="header-stats">
+    <div class="stat-pill">
+      <span class="stat-icon"><i class="fas fa-question-circle"></i></span>
+      <strong>Have</strong> questions?
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="heading-2">Frequently Asked Questions</h1>
+    <p>
+      Everything you need to know about SkillCircle and how to make the most of it.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="faq-section">
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>Do I need to create an account?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      No! SkillCircle is completely free and requires no account creation. Just fill out the post form with your information and you're ready to go. All your posts are stored locally in your browser.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>Is SkillCircle really free?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Yes! SkillCircle is 100% free. There are no fees, no payments, no commissions. It runs entirely in your browser and we take nothing. Skill exchanges are direct human-to-human — no middleman.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>How do I post a skill?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Go to the Browse Skills page and fill out the post form at the top. Share your name, location, what you can teach, what you need help with, and a brief description. Choose a category and whether you're offering or requesting. Click "Post to the circle" and you're live!
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>Can I delete or edit my post?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Currently, posts are stored locally in your browser. If you want to remove a post, you can clear your browser's localStorage. In a future version, we'll add the ability to manage and edit your posts directly through the interface.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>How do I start a skill exchange?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Find someone whose skills interest you, click the "Connect" button, write them a friendly message introducing yourself and your interests, and send it. They'll see your message and can respond. From there, you discuss terms, format, and schedule directly with each other.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>Is my information secure?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      All your data is stored locally in your browser using localStorage — it never leaves your device and is never sent to any server. Only the information you choose to share publicly (in your post) is visible to others. Use a pseudonym or first name if you prefer privacy.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>Can I search for specific skills?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Absolutely! Use the search box to find skills by keyword. You can also use the filter buttons to browse by type (offerings/requests) or by category (Tech, Arts, Language, etc.). Combine search and filters to find exactly what you're looking for.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+      <h3>What happens after I send a connection message?</h3>
+      <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+    </div>
+    <div class="faq-answer">
+      Your message is recorded as a connection. The other person will see you've connected. Currently, SkillCircle shows you that a connection was made, but actual messaging happens outside the platform. We recommend exchanging contact info (email, phone, messaging app) in your first message to continue the conversation.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding: var(--spacing-2xl) var(--spacing-lg); text-align: center; border-top: 1px solid var(--border); background: var(--card-bg); margin-top: var(--spacing-3xl);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="margin-bottom: var(--spacing-lg);">
+      <div class="logo">Skill<span>Circle</span></div>
+    </div>
+    <div style="display: flex; gap: var(--spacing-2xl); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-lg); font-size: 13px;">
+      <a href="browse.html" style="color: var(--muted); text-decoration: none;">Browse Skills</a>
+      <a href="how-it-works.html" style="color: var(--muted); text-decoration: none;">How it works</a>
+      <a href="faq.html" style="color: var(--muted); text-decoration: none;">FAQ</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../js/ui.js"></script>
+
+</body>
+</html>

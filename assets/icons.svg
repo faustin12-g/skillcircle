@@ -1,0 +1,137 @@
+<!-- SVG Icons for SkillCircle -->
+<!-- These can be embedded directly in HTML or used as background images -->
+
+<!-- CATEGORY ICONS -->
+<svg id="icon-education" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M12 2L2 7v5c0 5.5 3.8 10.8 9 12 5.2-1.2 9-6.5 9-12V7l-10-5z"/>
+  <path d="M12 12v4m-3-2h6"/>
+</svg>
+
+<svg id="icon-tech" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+  <line x1="8" y1="21" x2="16" y2="21"/>
+  <line x1="12" y1="17" x2="12" y2="21"/>
+</svg>
+
+<svg id="icon-arts" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+  <path d="M8 14c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z"/>
+  <circle cx="18" cy="9" r="1.5"/>
+</svg>
+
+<svg id="icon-health" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+  <line x1="12" y1="8" x2="12" y2="16"/>
+  <line x1="8" y1="12" x2="16" y2="12"/>
+</svg>
+
+<svg id="icon-trades" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+</svg>
+
+<svg id="icon-language" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  <circle cx="9" cy="10" r="1"/>
+  <circle cx="12" cy="10" r="1"/>
+  <circle cx="15" cy="10" r="1"/>
+</svg>
+
+<svg id="icon-business" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+  <circle cx="12" cy="7" r="4"/>
+</svg>
+
+<!-- TYPE ICONS -->
+<svg id="icon-offer" viewBox="0 0 24 24" width="24" height="24" fill="#2f6b4b">
+  <path d="M12 2L15.09 8.26H22L17.55 12.5L18.91 18.76L12 14.5L5.09 18.76L6.45 12.5L2 8.26H8.91L12 2Z"/>
+</svg>
+
+<svg id="icon-request" viewBox="0 0 24 24" width="24" height="24" fill="#c84b2f">
+  <path d="M12 2L15.09 8.26H22L17.55 12.5L18.91 18.76L12 14.5L5.09 18.76L6.45 12.5L2 8.26H8.91L12 2Z"/>
+</svg>
+
+<!-- ACTION ICONS -->
+<svg id="icon-connect" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M12 5v14M5 12h14"/>
+  <circle cx="12" cy="12" r="10"/>
+</svg>
+
+<svg id="icon-search" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <circle cx="11" cy="11" r="8"/>
+  <path d="m21 21-4.35-4.35"/>
+</svg>
+
+<svg id="icon-menu" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <line x1="3" y1="6" x2="21" y2="6"/>
+  <line x1="3" y1="12" x2="21" y2="12"/>
+  <line x1="3" y1="18" x2="21" y2="18"/>
+</svg>
+
+<svg id="icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <line x1="18" y1="6" x2="6" y2="18"/>
+  <line x1="6" y1="6" x2="18" y2="18"/>
+</svg>
+
+<!-- DIRECTION ICONS -->
+<svg id="icon-arrow-right" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <line x1="5" y1="12" x2="19" y2="12"/>
+  <polyline points="12 5 19 12 12 19"/>
+</svg>
+
+<svg id="icon-arrow-down" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <line x1="12" y1="5" x2="12" y2="19"/>
+  <polyline points="19 12 12 19 5 12"/>
+</svg>
+
+<!-- UTILITY ICONS -->
+<svg id="icon-check" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+  <polyline points="20 6 9 17 4 12"/>
+</svg>
+
+<svg id="icon-star" viewBox="0 0 24 24" width="24" height="24" fill="#d4952a">
+  <polygon points="12 2 15.09 8.26 22 9.27 17.77 14.14 18.91 21.02 12 17.77 5.09 21.02 6.23 14.14 2 9.27 8.91 8.26"/>
+</svg>
+
+<!-- CSS for using these icons -->
+<style>
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    color: currentColor;
+  }
+
+  .icon-education { /* use: <svg class="icon icon-education">...</svg> */ }
+  .icon-tech { /* use: <svg class="icon icon-tech">...</svg> */ }
+  .icon-arts { /* use: <svg class="icon icon-arts">...</svg> */ }
+  .icon-health { /* use: <svg class="icon icon-health">...</svg> */ }
+  .icon-trades { /* use: <svg class="icon icon-trades">...</svg> */ }
+  .icon-language { /* use: <svg class="icon icon-language">...</svg> */ }
+  .icon-business { /* use: <svg class="icon icon-business">...</svg> */ }
+</style>
+
+<!-- How to Replace Emojis with SVG Icons:
+
+1. Find emoji references in HTML (e.g., "💻 Tech")
+2. Replace with: <svg class="icon icon-tech"></svg> Tech
+
+3. Or use this approach for inline styling:
+   <span style="display: inline-flex; align-items: center; gap: 6px;">
+     <svg class="icon icon-tech"></svg>
+     <span>Tech</span>
+   </span>
+
+4. For better performance, optimize SVGs:
+   - Remove unnecessary attributes
+   - Use stroke instead of fill where possible
+   - Keep viewBox="0 0 24 24" consistent
+
+5. To change icon colors, update the svg fill or stroke:
+   stroke="currentColor" (inherits text color)
+   fill="currentColor" (inherits text color)
+   fill="#c84b2f" (specific color)
+
+Note: Current implementation uses emoji for universal browser support and
+easy customization. SVG icons are available for future enhancement.
+-->

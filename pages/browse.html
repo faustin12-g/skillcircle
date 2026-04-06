@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Skills - SkillCircle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/browse.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="../index.html" class="header-logo">
+    <div class="logo">Skill<span>Circle</span></div>
+    <div class="tagline">Trade skills, not money</div>
+  </a>
+  
+  <nav class="header-nav">
+    <a href="../index.html" class="nav-link">← Back to home</a>
+    <a href="#browse" class="nav-link active">Browse skills</a>
+    <a href="../pages/faq.html" class="nav-link">FAQ</a>
+  </nav>
+  
+  <div class="header-stats">
+    <div class="stat-pill">
+      <span class="stat-icon"><i class="fas fa-map-pin"></i></span>
+      <strong id="totalCount">0</strong> posted
+    </div>
+    <div class="stat-pill">
+      <span class="stat-icon"><i class="fas fa-check"></i></span>
+      <strong id="connectCount">0</strong> connected
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1 class="heading-2">Find your next skill exchange</h1>
+      <p>
+        Browse thousands of community members ready to share their skills. 
+        Post what you offer and what you need. Connect with real people. 
+        No money, just mutual growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- POST FORM SECTION -->
+  <div class="cards-section" style="margin-bottom: 32px;">
+    <div class="post-form">
+      <h2>Post your skill exchange</h2>
+      
+      <div class="post-form-content">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fName">Your Name</label>
+            <input type="text" id="fName" placeholder="e.g. Amara K." maxlength="40">
+          </div>
+          <div class="form-group">
+            <label for="fLocation">Location</label>
+            <input type="text" id="fLocation" placeholder="e.g. Kigali, Rwanda" maxlength="50">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fOffer">I can offer</label>
+            <input type="text" id="fOffer" placeholder="e.g. French lessons, guitar, web design…" maxlength="60">
+          </div>
+          <div class="form-group">
+            <label for="fNeed">I need help with</label>
+            <input type="text" id="fNeed" placeholder="e.g. cooking, photography, math tutoring…" maxlength="60">
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="fDesc">Tell the community more (optional)</label>
+          <textarea id="fDesc" placeholder="Share a little about yourself and what kind of exchange you're looking for…" maxlength="300"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fCategory">Category</label>
+            <select id="fCategory">
+              <option value="Education">Education & tutoring</option>
+              <option value="Tech">Tech & digital</option>
+              <option value="Arts">Arts & creativity</option>
+              <option value="Health">Health & wellness</option>
+              <option value="Trades">Trades & DIY</option>
+              <option value="Language">Language & culture</option>
+              <option value="Business">Business & finance</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fType">Post type</label>
+            <select id="fType">
+              <option value="offer">I'm offering a skill</option>
+              <option value="request">I'm requesting a skill</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn-post">
+          <span><i class="fas fa-check"></i></span> Post to the circle
+        </button>
+        <span class="form-note">Visible to all. No account needed.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTERS SECTION -->
+  <section class="filters-section">
+    <div class="filters-header">
+      <div class="filter-label">Filter by:</div>
+    </div>
+    
+    <div class="filters-bar">
+      <button class="filter-btn active" data-filter="all">
+        <span class="filter-btn-icon"><i class="fas fa-sync-alt"></i></span> All
+      </button>
+      <button class="filter-btn" data-filter="offer">
+        <span class="filter-btn-icon"><i class="fas fa-arrow-up"></i></span> Offerings
+      </button>
+      <button class="filter-btn" data-filter="request">
+        <span class="filter-btn-icon"><i class="fas fa-arrow-down"></i></span> Requests
+      </button>
+      <button class="filter-btn" data-filter="Education">
+        <span class="filter-btn-icon"><i class="fas fa-book"></i></span> Education
+      </button>
+      <button class="filter-btn" data-filter="Tech">
+        <span class="filter-btn-icon"><i class="fas fa-laptop"></i></span> Tech
+      </button>
+      <button class="filter-btn" data-filter="Arts">
+        <span class="filter-btn-icon"><i class="fas fa-palette"></i></span> Arts
+      </button>
+      <button class="filter-btn" data-filter="Language">
+        <span class="filter-btn-icon"><i class="fas fa-globe"></i></span> Language
+      </button>
+      <button class="filter-btn" data-filter="Health">
+        <span class="filter-btn-icon"><i class="fas fa-heart"></i></span> Health
+      </button>
+      <button class="filter-btn" data-filter="Trades">
+        <span class="filter-btn-icon"><i class="fas fa-tools"></i></span> Trades
+      </button>
+
+      <div class="search-wrap">
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+        <input type="text" id="searchInput" placeholder="Search skills…">
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS SECTION -->
+  <section class="cards-section">
+    <div class="section-title">Community board</div>
+    <div class="cards-grid" id="cardsGrid">
+      <div class="card-skill"><div style="padding: 20px; color: var(--muted); text-align: center;">Loading...</div></div>
+    </div>
+  </section>
+</main>
+
+<!-- CONNECTION MODAL -->
+<div class="modal-overlay" id="modalBg">
+  <div class="modal">
+    <h3 id="modalTitle">Connect with someone</h3>
+    <p id="modalDesc">Send them a message to start your skill exchange.</p>
+    <textarea id="modalMessage" style="width: 100%; border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--spacing-md); min-height: 100px; margin-bottom: var(--spacing-lg); resize: vertical; font-family: var(--font-sans); font-size: 14px; color: var(--ink); outline: none;" placeholder="Hi! I'd love to connect about your skill exchange..."></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-send">Send connection →</button>
+      <button class="btn btn-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast" class="toast"></div>
+
+<!-- JavaScript Files -->
+<script src="../js/storage.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/browse.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillCircle — Community Skill Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/landing.css">
+  
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header style="display: flex; align-items: center; justify-content: space-between; padding: var(--spacing-md) var(--spacing-lg); border-bottom: 1px solid var(--border); background: var(--paper); position: sticky; top: 0; z-index: var(--z-header); gap: var(--spacing-lg);">
+  <a href="index.html" style="display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: inherit;">
+    <div style="font-family: var(--font-serif); font-size: 24px; font-weight: 900; letter-spacing: -0.5px; color: var(--ink);">Skill<span style="color: var(--accent);">Circle</span></div>
+    <div style="font-size: 10px; color: var(--muted); font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase;">Trade skills, not money</div>
+  </a>
+  
+  <nav style="display: flex; gap: var(--spacing-lg); flex: 1; justify-content: center;">
+    <a href="index.html" style="color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+      <i class="fas fa-home"></i> Home
+    </a>
+    <a href="pages/browse.html" style="color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color var(--transition-fast); display: flex; align-items: center; gap: 6px;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">
+      <i class="fas fa-search"></i> Browse Skills
+    </a>
+    <a href="pages/how-it-works.html" style="color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color var(--transition-fast); display: flex; align-items: center; gap: 6px;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">
+      <i class="fas fa-book"></i> How It Works
+    </a>
+    <a href="pages/faq.html" style="color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color var(--transition-fast); display: flex; align-items: center; gap: 6px;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">
+      <i class="fas fa-question-circle"></i> FAQ
+    </a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="heading-1">
+      Your skills are<br>
+      <em>someone's solution.</em>
+    </h1>
+    
+    <p>
+      Trade skills, not money. Post what you can teach. Post what you need to learn. 
+      Connect with real people in your community — zero cost, pure human exchange.
+    </p>
+    
+    <div class="hero-cta">
+      <button class="btn btn-primary" data-action="get-started">
+        Get started →
+      </button>
+      <button class="btn btn-outline" onclick="document.querySelector('.how-it-works-section').scrollIntoView({behavior:'smooth'})">
+        Learn how it works
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features-section scroll-reveal">
+  <div class="section-header">
+    <h2 class="heading-2">Why SkillCircle</h2>
+    <p class="subtitle">
+      A platform built for real human connection and mutual growth
+    </p>
+  </div>
+  
+  <div class="features-grid">
+    <div class="feature-card scroll-reveal">
+      <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+      <h3>True Skill Exchange</h3>
+      <p>Trade skills directly with others. No money, no platforms taking a cut. Just human-to-human value exchange.</p>
+    </div>
+    
+    <div class="feature-card scroll-reveal">
+      <div class="feature-icon"><i class="fas fa-globe"></i></div>
+      <h3>Global Community</h3>
+      <p>Connect with people across continents. Learn languages, trades, arts, tech, and more from anywhere in the world.</p>
+    </div>
+    
+    <div class="feature-card scroll-reveal">
+      <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+      <h3>Instant Connection</h3>
+      <p>Post your skills and start connecting immediately. No verification. No waiting. No gatekeeping. Simple and direct.</p>
+    </div>
+    
+    <div class="feature-card scroll-reveal">
+      <div class="feature-icon"><i class="fas fa-star"></i></div>
+      <h3>Endless Possibilities</h3>
+      <p>From French lessons to bike repair, yoga to coding. Whatever skill you offer or want to learn, someone needs it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section scroll-reveal">
+  <div class="stats-container">
+    <div class="stats-grid">
+      <div class="stat-item scroll-reveal">
+        <span class="stat-number">1000+</span>
+        <span class="stat-label">Skill Exchanges Posted</span>
+      </div>
+      <div class="stat-item scroll-reveal">
+        <span class="stat-number"><i class="fas fa-users"></i></span>
+        <span class="stat-label">Real human connections</span>
+      </div>
+      <div class="stat-item scroll-reveal">
+        <span class="stat-number">0%</span>
+        <span class="stat-label">Commission fees</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS SECTION -->
+<section class="how-it-works-section">
+  <div class="section-header">
+    <h2 class="heading-2">How It Works</h2>
+    <p class="subtitle">
+      Three simple steps to start exchanging skills with real people.
+    </p>
+  </div>
+  
+  <div class="steps-grid">
+    <div class="step-card scroll-reveal">
+      <div class="step-number">1</div>
+      <h3>Post Your Skills</h3>
+      <p>Tell the community what you can teach and what you need to learn. Add a brief description and you're ready to go.</p>
+    </div>
+    
+    <div class="step-card scroll-reveal">
+      <div class="step-number">2</div>
+      <h3>Find Your Match</h3>
+      <p>Browse through other community members. Filter by skill, category, or location. Find someone whose skills you need.</p>
+    </div>
+    
+    <div class="step-card scroll-reveal">
+      <div class="step-number">3</div>
+      <h3>Start Exchange</h3>
+      <p>Send them a message. Agree on terms. Schedule your session. Start learning and teaching in your own way.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section scroll-reveal">
+  <div class="cta-content">
+    <h2>Ready to share your skills?</h2>
+    <p>
+      Join thousands of people trading skills without money. 
+      Start your journey today.
+    </p>
+    <button class="btn btn-primary" data-action="get-started">Join the community →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding: var(--spacing-2xl) var(--spacing-lg); text-align: center; border-top: 1px solid var(--border); background: var(--card-bg);">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div style="margin-bottom: var(--spacing-lg);">
+      <div class="logo">Skill<span>Circle</span></div>
+      <div class="tagline">Trade skills, not money</div>
+    </div>
+    <div style="display: flex; gap: var(--spacing-2xl); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-lg); font-size: 13px;">
+      <a href="pages/browse.html" style="color: var(--muted); text-decoration: none; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">Browse Skills</a>
+      <a href="pages/how-it-works.html" style="color: var(--muted); text-decoration: none; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">How It Works</a>
+      <a href="pages/faq.html" style="color: var(--muted); text-decoration: none; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">FAQ</a>
+    </div>
+    <p style="font-size: 12px; color: var(--muted);">
+      © 2024 SkillCircle. A community-driven skill exchange platform.
+    </p>
+  </div>
+</footer>
+
+<!-- JavaScript Files -->
+<script src="js/ui.js"></script>
+<script src="js/landing.js"></script>
+
+</body>
+</html>
