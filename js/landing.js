@@ -55,6 +55,25 @@ const Landing = {
 
   // Attach event listeners
   attachEventListeners() {
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const headerNav = document.getElementById('headerNav');
+    
+    if (hamburger && headerNav) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        headerNav.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      headerNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          headerNav.classList.remove('active');
+        });
+      });
+    }
+
     // Get Started button
     const getStartedBtn = document.querySelectorAll('[data-action="get-started"]');
     getStartedBtn.forEach((btn) => {

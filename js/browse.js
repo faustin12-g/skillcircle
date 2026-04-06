@@ -29,6 +29,25 @@ const App = {
 
   // Setup event listeners
   setupEventListeners() {
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const headerNav = document.getElementById('headerNav');
+    
+    if (hamburger && headerNav) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        headerNav.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      headerNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          headerNav.classList.remove('active');
+        });
+      });
+    }
+
     // Filter buttons
     document.querySelectorAll('.filter-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
