@@ -8,10 +8,42 @@
   justify-content: center;
   align-items: center;
   padding: var(--spacing-3xl) var(--spacing-lg);
-  background: linear-gradient(135deg, rgba(245, 240, 232, 0.85) 0%, rgba(250, 246, 238, 0.85) 100%), 
-              url('../assets/images/hero5.png') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: heroSlideshow 25s infinite ease-in-out;
   position: relative;
   overflow: hidden;
+}
+
+@keyframes heroSlideshow {
+  0% {
+    background-image: url('../assets/images/hero1.jpg');
+  }
+  20% {
+    background-image: url('../assets/images/hero1.jpg');
+  }
+  25% {
+    background-image: url('../assets/images/hero2.jpg');
+  }
+  45% {
+    background-image: url('../assets/images/hero2.jpg');
+  }
+  50% {
+    background-image: url('../assets/images/hero3.jpg');
+  }
+  70% {
+    background-image: url('../assets/images/hero3.jpg');
+  }
+  75% {
+    background-image: url('../assets/images/hero4.jpg');
+  }
+  95% {
+    background-image: url('../assets/images/hero4.jpg');
+  }
+  100% {
+    background-image: url('../assets/images/hero5.png');
+  }
 }
 
 .hero::before {
@@ -21,7 +53,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.35) 100%);
   pointer-events: none;
 }
 
@@ -32,7 +64,7 @@
   left: -30%;
   width: 80%;
   height: 80%;
-  background: radial-gradient(circle, rgba(47, 107, 75, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(47, 107, 75, 0.02) 0%, transparent 70%);
   animation: floatGradient 25s ease-in-out infinite reverse;
   pointer-events: none;
 }
