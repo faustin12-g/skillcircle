@@ -124,7 +124,7 @@
 
 .hero p {
   font-size: 18px;
-  color: var(--muted);
+  color: white;
   max-width: 540px;
   line-height: 1.8;
   margin: 0 auto var(--spacing-2xl);

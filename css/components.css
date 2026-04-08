@@ -69,8 +69,8 @@
 
 .btn-outline {
   background: transparent;
-  color: var(--muted);
-  border: 1px solid var(--border);
+  color: var(--accent);
+  border: 2px solid var(--accent);
   padding: 11px 20px;
   font-size: 13px;
   transition: all var(--transition-fast);
